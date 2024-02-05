@@ -60,5 +60,5 @@ To launch hand-written testing framework:
 - MaxRectangle project -> Properties -> Configuration Properties -> General -> Configuration Type -> .exe
 
 Google Test output:
-![Tests](images/test.png)
+![Tests](images/tests.png)
 
