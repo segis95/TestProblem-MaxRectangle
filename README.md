@@ -36,7 +36,7 @@ The corresponding LeetCode problem page: https://leetcode.com/problems/maximal-r
 
 # 2. Solutions
 Two different algorithms provided for this problem.
-- First solution is O(W*H^2): processing matrix line by line and tracking (via map) the heights of different 1s matrices ending in a given line position on previous line
+- First solution is O(W*H^2*LogH): processing matrix line by line and tracking (via map) the heights of different 1s matrices ending in a given line position on previous line
 - Second solution is O(W*H): similar, but employs stack to efficiently track the maximum possible heights of a matrix ending in a given line position
 
 Both solutions are explained and documented line-by-line in code.
