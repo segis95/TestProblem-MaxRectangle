@@ -68,7 +68,7 @@ int main(){
 
     // 100x100 (Lower Triangular  Matrix)
     test_find_max_submatrix(find_max_submatrix_maps, "bigger.txt", true); // 537ms
-    test_find_max_submatrix(find_max_submatrix_stack, "bigger.txt", true); // порядка 49ms
+    test_find_max_submatrix(find_max_submatrix_stack, "bigger.txt", true); // 49ms
 
     // 1000x1000 (Lower Triangular  Matrix)
     test_find_max_submatrix(find_max_submatrix_maps, "huge.txt", true); // 532s

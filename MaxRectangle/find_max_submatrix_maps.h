@@ -1,18 +1,16 @@
-// Решение основано на методе динамического программирования.  Рассмотрим строку матрицы с номером
-// h > 0. Пусть в этой строке в позиции w стоит единица, которой предшествуют k подряд идущих единиц:
+// A dynamic programming solution.
+// Let in the line number h > 0 in position w there is a 1 preceded by k subsequent 1s:
 //
-// строка h: ....1111..11...
-//                      ^позиция w
+// line h: ....1111..11...
+//                      ^position w
 //
-// Если для строки h-1 для каждой позиции v известна МАКСИМАЛЬНАЯ ГЛУБИНА слоя единиц для каждой
-// возможной ШИРИНЫ слоя единиц, заканчивающегося в v, то можно подсчитать динамически эти же
-// величины и для позиций строки h, зная k. Для хранения пар <ШИРИНА --> МАКСИМАЛЬНАЯ ГЛУБИНА>
-// используется массив словарей размера длины строки матрицы.
+// If for line h-1 for each position v we know the max height of 1s layer for each possible number
+// of consequent ones ending in position v, we then are able to dynamically recalculate these values 
+// for the line h given the value of k.
+// To store pairs <number of consequent 1s ending at position x --> max height of these consequent 1s' series>
+// we use an array of maps for each line position.
 //
-// Решение имеет сложность по времени строго говоря O(m*n^2logn) и использует O(m*n) дополнительной
-// памяти. Поскольку серии подряд идущих единиц в строках могут прерываться нулями и ГЛУБИНА будет
-// продолжима лишь для ограниченного числа ШИРОТ. Пример худшего случая значительного размера будет
-// приведен в тестах.
+// The algorithm is O(m*n^2logn) and uses O(m*n) of additional memory.
 
 #pragma once
 #include "data_structures.h"

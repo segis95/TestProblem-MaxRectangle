@@ -11,7 +11,7 @@
 #include <cassert>
 #include <chrono>
 
-// точка <x, y>
+// point <x, y>
 struct Point{
     bool operator==(const Point& other) const {return (x == other.x) && (y == other.y);}
     int x;
@@ -19,7 +19,7 @@ struct Point{
 };
 
 
-// прямоугольник, заданный по двум угловым точкам
+// rectangle defined by two corner points
 struct Rectangle {
     Point top_left;
     Point bottom_right;
