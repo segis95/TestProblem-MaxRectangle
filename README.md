@@ -36,7 +36,7 @@ The corresponding LeetCode problem page: https://leetcode.com/problems/maximal-r
 
 # 2. Solutions
 Two different algorithms provided for this problem.
-- First solution is O(W*H^2): processing matrix line by line and tracking (via map) the heights of different 1s matrices ending in a given line position on previous line
+- First solution is O(W*H<sup>2</sup>*Log(H)): processing matrix line by line and tracking (via map) the heights of different 1s matrices ending in a given line position on previous line
 - Second solution is O(W*H): similar, but employs stack to efficiently track the maximum possible heights of a matrix ending in a given line position
 
 Both solutions are explained and documented line-by-line in code.
@@ -44,7 +44,7 @@ Both solutions are explained and documented line-by-line in code.
 # 3. Testing
 There are two provided options to test the algorithms: a hand-written testing framework and a Google Test framework adding an additional project to solution.
 
-Here is the expected project schema.
+Here is the expected project schema:<br />
 ![Project](images/project.png)
 
 To launch Google Test framework one needs to do the following:
@@ -59,6 +59,8 @@ To launch hand-written testing framework:
 - Solution -> Single Startup Project -> MaxRectangle project
 - MaxRectangle project -> Properties -> Configuration Properties -> General -> Configuration Type -> .exe
 
-Google Test output:
-![Tests](images/test.png)
+**Tests_generation.ipynb** contains some usefuls scripts for test generation.
+
+Google Test output:<br />
+![Tests](images/tests.png)
 
