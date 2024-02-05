@@ -67,16 +67,16 @@ int main(){
     test_find_max_submatrix(find_max_submatrix_stack, "tests.txt");
 
     // 100x100 (Lower Triangular  Matrix)
-    test_find_max_submatrix(find_max_submatrix_maps, "bigger.txt", true); // порядка 150ms
-    test_find_max_submatrix(find_max_submatrix_stack, "bigger.txt", true); // порядка 1ms
+    test_find_max_submatrix(find_max_submatrix_maps, "bigger.txt", true); // 537ms
+    test_find_max_submatrix(find_max_submatrix_stack, "bigger.txt", true); // порядка 49ms
 
     // 1000x1000 (Lower Triangular  Matrix)
-    test_find_max_submatrix(find_max_submatrix_maps, "huge.txt", true); // порядка 3минут
-    test_find_max_submatrix(find_max_submatrix_stack, "huge.txt", true); // порядка 0.1c
+    test_find_max_submatrix(find_max_submatrix_maps, "huge.txt", true); // 532s
+    test_find_max_submatrix(find_max_submatrix_stack, "huge.txt", true); // 4.8s
 
     // 1000x1000 (Lower Triangular Random Matrix)
-    test_find_max_submatrix(find_max_submatrix_maps, "huge_random.txt", true); // 324ms
-    test_find_max_submatrix(find_max_submatrix_stack, "huge_random.txt", true); // 118ms
+    test_find_max_submatrix(find_max_submatrix_maps, "huge_random.txt", true); // 4.9s
+    test_find_max_submatrix(find_max_submatrix_stack, "huge_random.txt", true); // 4.8s
 
     return 0;
 }
